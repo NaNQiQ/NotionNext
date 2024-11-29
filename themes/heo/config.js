@@ -1,8 +1,8 @@
 const CONFIG = {
-  HEO_HOME_POST_TWO_COLS: false, // 首页博客两列显示，若为false则只显示一列
-  HEO_LOADING_COVER: false, // 页面加载的遮罩动画
+  //HEO_HOME_POST_TWO_COLS: false, // 首页博客两列显示，若为false则只显示一列
+  //HEO_LOADING_COVER: false, // 页面加载的遮罩动画
 
-  HEO_HOME_BANNER_ENABLE: false,
+  //HEO_HOME_BANNER_ENABLE: false,
 
   HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
 
