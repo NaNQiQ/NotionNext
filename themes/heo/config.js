@@ -1,6 +1,6 @@
 const CONFIG = {
   HEO_HOME_POST_TWO_COLS: false, // 首页博客两列显示，若为false则只显示一列
-  HEO_LOADING_COVER: true, // 页面加载的遮罩动画
+  HEO_LOADING_COVER: false, // 页面加载的遮罩动画
 
   HEO_HOME_BANNER_ENABLE: false,
 
@@ -50,9 +50,9 @@ const CONFIG = {
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/paopao233',
+  HEO_INFO_CARD_URL2: 'https://github.com/NaNQiQ',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.parklot.me',
+  HEO_INFO_CARD_URL3: 'https://www.newobjs.me',
   HEO_INFO_CARD_TEXT3: '了解更多',
 
   // 用户技能图标
