@@ -59,16 +59,16 @@ const LayoutBase = props => {
   const headerSlot = (
     <header>
       {/* 顶部导航 */}
-      <Header {...props} />
+     //<Header {...props} />
 
       {/* 通知横幅 */}
-      {router.route === '/' ? (
-        <>
-          <NoticeBar />
-          <Hero {...props} />
-        </>
-      ) : null}
-      {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
+     // {router.route === '/' ? (
+       // <>
+          //<NoticeBar />
+         // <Hero {...props} />
+      //  </>
+     // ) : null}
+     // {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
     </header>
   )
 
@@ -97,34 +97,34 @@ const LayoutBase = props => {
       <Style />
 
       {/* 顶部嵌入 导航栏，首页放hero，文章页放文章详情 */}
-      {headerSlot}
+     // {headerSlot}
 
       {/* 主区块 */}
-      <main
-        id='wrapper-outer'
-        className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-5`}>
-        <div
-          id='container-inner'
-          className={`${HEO_HERO_BODY_REVERSE ? 'flex-row-reverse' : ''} w-full mx-auto lg:flex justify-center relative z-10`}>
-          <div className={`w-full h-auto ${className || ''}`}>
+     // <main
+        //id='wrapper-outer'
+       // className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-5`}>
+       // <div
+        //  id='container-inner'
+        //  className={`${HEO_HERO_BODY_REVERSE ? 'flex-row-reverse' : ''} w-full mx-auto lg:flex justify-center relative z-10`}>
+       //   <div className={`w-full h-auto ${className || ''}`}>
             {/* 主区上部嵌入 */}
-            {slotTop}
-            {children}
-          </div>
+       //     {slotTop}
+      //      {children}
+        //  </div>
 
-          <div className='lg:px-2'></div>
+         // <div className='lg:px-2'></div>
 
-          <div className='hidden xl:block'>
+         // <div className='hidden xl:block'>
             {/* 主区快右侧 */}
-            {slotRight}
-          </div>
-        </div>
-      </main>
+         //   {slotRight}
+         // </div>
+       // </div>
+     // </main>
 
       {/* 页脚 */}
       <Footer />
 
-      {HEO_LOADING_COVER && <LoadingCover />}
+     // {HEO_LOADING_COVER && <LoadingCover />}
     </div>
   )
 }
