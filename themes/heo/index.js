@@ -59,7 +59,7 @@ const LayoutBase = props => {
 const headerSlot = (
   <header>
     {/* 顶部导航 */}
-    {/* <Header {...props} /> */}
+    { <Header {...props} /> }
 
     {/* 通知横幅 */}
     {router.route === '/' ? (
