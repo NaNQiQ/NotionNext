@@ -56,21 +56,21 @@ const LayoutBase = props => {
   const { fullWidth, isDarkMode } = useGlobal()
   const router = useRouter()
 
-  const headerSlot = (
-    <header>
-      {/* 顶部导航 */}
-     //<Header {...props} />
+const headerSlot = (
+  <header>
+    {/* 顶部导航 */}
+    {/* <Header {...props} /> */}
 
-      {/* 通知横幅 */}
-     // {router.route === '/' ? (
-       // <>
-          //<NoticeBar />
-         // <Hero {...props} />
-      //  </>
-     // ) : null}
-     // {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
-    </header>
-  )
+    {/* 通知横幅 */}
+    {router.route === '/' ? (
+      <>
+        {/* <NoticeBar /> */}
+        {/* <Hero {...props} /> */}
+      </>
+    ) : null}
+    {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
+  </header>
+)
 
   // 右侧栏 用户信息+标签列表
   const slotRight =
@@ -90,43 +90,43 @@ const LayoutBase = props => {
     loadWowJS()
   }, [])
 
-  return (
-    <div
-      id='theme-heo'
-      className={`${siteConfig('FONT_STYLE')} bg-[#f7f9fe] dark:bg-[#18171d] h-full min-h-screen flex flex-col scroll-smooth`}>
-      <Style />
+return (
+  <div
+    id='theme-heo'
+    className={`${siteConfig('FONT_STYLE')} bg-[#f7f9fe] dark:bg-[#18171d] h-full min-h-screen flex flex-col scroll-smooth`}>
+    <Style />
 
-      {/* 顶部嵌入 导航栏，首页放hero，文章页放文章详情 */}
-     // {headerSlot}
+    {/* 顶部嵌入 导航栏，首页放hero，文章页放文章详情 */}
+    {/* {headerSlot} */}
 
-      {/* 主区块 */}
-     // <main
-        //id='wrapper-outer'
-       // className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-5`}>
-       // <div
-        //  id='container-inner'
-        //  className={`${HEO_HERO_BODY_REVERSE ? 'flex-row-reverse' : ''} w-full mx-auto lg:flex justify-center relative z-10`}>
-       //   <div className={`w-full h-auto ${className || ''}`}>
-            {/* 主区上部嵌入 */}
-       //     {slotTop}
-      //      {children}
-        //  </div>
+    {/* 主区块 */}
+    {/* <main
+      id='wrapper-outer'
+      className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-5`}>
+      <div
+        id='container-inner'
+        className={`${HEO_HERO_BODY_REVERSE ? 'flex-row-reverse' : ''} w-full mx-auto lg:flex justify-center relative z-10`}>
+        <div className={`w-full h-auto ${className || ''}`}>
+          {/* 主区上部嵌入 */}
+          {slotTop}
+          {children}
+        </div>
 
-         // <div className='lg:px-2'></div>
+        <div className='lg:px-2'></div>
 
-         // <div className='hidden xl:block'>
-            {/* 主区快右侧 */}
-         //   {slotRight}
-         // </div>
-       // </div>
-     // </main>
+        <div className='hidden xl:block'>
+          {/* 主区快右侧 */}
+          {slotRight}
+        </div>
+      </div>
+    </main> */}
 
-      {/* 页脚 */}
-      <Footer />
+    {/* 页脚 */}
+    <Footer />
 
-     // {HEO_LOADING_COVER && <LoadingCover />}
-    </div>
-  )
+    {/* {HEO_LOADING_COVER && <LoadingCover />} */}
+  </div>
+)
 }
 
 /**
